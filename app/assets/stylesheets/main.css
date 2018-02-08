@@ -85,9 +85,6 @@ h1 {
 .tomato-navigation__title {
 	font-weight: bold;
 }
-.navbar-header{
-	width:100%;
-}
 
 /*************************************** 
  * Tomato Card 
@@ -186,3 +183,19 @@ h1 {
  **************************************/
 
  /* Add Code Here */
+ .announcements_table{
+	table-layout:fixed;
+ }
+ .announcements_table_thead{
+	display:block;
+	position:relative;
+ }
+ .announcements_table_tbody{
+	overflow:auto;
+	display:block;
+	height:500px;
+ }
+ .announcement_header{
+
+	float:right;
+ }

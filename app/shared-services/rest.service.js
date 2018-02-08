@@ -12,8 +12,8 @@
             getTomatoes: getTomatoes,
             getFarms: getFarms,
             getExerciseThreeData: getExerciseThreeData,
-            getAllAnnouncements: getAllAnnouncements,
-            getAllAnnouncementsOwners: getAllAnnouncementsOwners
+            getAnnouncements: getAnnouncements,
+            getAnnouncementsOwners: getAnnouncementsOwners
         };
 
         return service;
@@ -46,8 +46,7 @@
         }
 
         //Add your code here.
-
-        function getAllAnnouncements(){
+        function getAnnouncements() {
             return $http({
                 method: 'GET',
                 url: 'http://localhost:3000/announcements'
@@ -56,7 +55,7 @@
             });
         }
 
-        function getAllAnnouncementsOwners(){
+        function getAnnouncementsOwners() {
             return $http({
                 method: 'GET',
                 url: 'http://localhost:3000/owners'

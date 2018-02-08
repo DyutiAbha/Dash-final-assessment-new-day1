@@ -1,15 +1,21 @@
+<!-- Add your code here. -->
 <section class="container-fluid">
     <tomato-loading-indicator 
       ng-if="vm.loading" 
-      text="Fetching announcements details..."
+      text="Fetching announcements data..."
     />
-    
+
     <div class="row">
-        <div class="col-xs-12 col-sm-8">
-            <tomato-announcement-feed 
-            announcements="vm.announcemnets" 
-            announcementsOwners = "vm.announcemnetsOwners"
-            />
+        <div class="col-md-6 col-md-offset-3">
+            <tomato-card ng-if="!vm.loading" header="Announcements">
+                <div class="col-xs-12">
+                    <tomato-announcements-feed
+                        announcements="vm.announcements"
+                        owners="vm.owners"
+                    />
+                </div>
+            </tomato-card>
         </div>
     </div>
+
 </section>
